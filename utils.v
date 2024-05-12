@@ -4,8 +4,7 @@ fn print_choices(choices []string, current int) {
 	for i, choice in choices {
 		if i == current {
 			println('${choice_current} ${term.underline(choice)}')
-		}
-		else {
+		} else {
 			println('  ${choice}')
 		}
 	}
