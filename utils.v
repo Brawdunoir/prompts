@@ -1,5 +1,7 @@
 module prompts
 
+import term
+
 fn print_choices(choices []string, current int) {
 	for i, choice in choices {
 		if i == current {

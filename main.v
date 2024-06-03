@@ -13,19 +13,6 @@ const choice_unchecked = '[ ]'
 const no_initial = '[y/N]'
 const yes_initial = '[Y/n]'
 
-fn main() {
-	input("What's your name ?")
-
-	input_password('Type a password')!
-
-	confirm('Do you like this package ?', true)
-
-	choice('What color do you prefer ?', ['Purple', 'Pink', 'Yellow', 'Blue', 'Cyan', 'Orange',
-		'Red', 'Green', 'White', 'Black', 'Grey', 'Brown'])
-
-	multichoice('What animals do you like ?', ['Cat', 'Dog', 'Bird'])
-}
-
 // input formats your prompt and uses os.input under the hood.
 // as os.input, it returns '<EOF>' in case of an error (end of input).
 // see os.input for more info.
